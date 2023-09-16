@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="survey.css" />
+  </head>
+  <body>
+    <h1 id='title'>ELG Survey Form
+    <p id='description'>Thank you for taking some time to help us improve!</p>
+<!-- Survey questions start-->
+    <form id='survey-form'>
+      <h2>Name</h2>
+      <label for='name' id='name-label'>
+      <br>
+      <input id='name' name='name' type='text' required placeholder='Enter your name'>
+      </label>
+      <br>
+      <h2>Email</h2>
+      <label for='email' id='email-label'>
+      <br>
+      <input id='email' name='email' type='email' required placeholder='Enter your Email'>
+      </label>
+      <br>
+      <h2>Age (optional)</h2>
+      <label for='age' id='number-label'>
+      <br>
+      <input id='number' name='age' type='number'min='13' max='120' placeholder='Age'>
+      </label>
+      <br>
+<!--Occupation Selection-->
+      <h2>Which option best describes your current situation?</h2>
+      <label for='dropdown'>
+        <select id='dropdown'>
+          <option value=''>Select current role</option>
+          <option value='1'>Full time student</option>
+          <option value='2'>Full time worker</option>
+          <option value='3'>Other</option>
+        </select>
+      <br>
+      </label>
+<!--Recommendation buttons start-->
+      <h2> Would you recommend ELG to a friend?</h2>
+      <br>
+      <label for='definitly'>
+        <input id='definitly' name='recommend' type='radio' value='definitly'>Definitly</label>
+      <br>
+      <label for='maybe'>
+        <input id='maybe' name='recommend' type='radio' value='maybe'>Maybe</label>
+      <br>
+      <label for='not sure'>
+        <input id='not sure' name='recommend' type='radio' value='not sure'>Not sure</label>
+      <br>
+<!--Improvement Checkboxes-->
+    <h2>In what area would you like us to improve?  (Check all that apply)</h2>
+    <br>
+    <label>
+      <input type='checkbox' value='Front-end'>
+      Front-end Projects</label>
+    <br>
+    <label>
+      <input type='checkbox' value='Back-end'>
+      Back-end Projects</label>
+    <br>
+    <label>
+      <input type='checkbox' value='Data-viz'>
+      Data Visualization</label>
+    <br>
+    <label>
+      <input type='checkbox' value='Challenges'>
+      Challenges</label>
+    <br>
+    <label>
+      <input type='checkbox' value='Videos'>
+      Videos</label>
+    <br>
+<!--Additional comments-->
+   <h2>Any comments or suggestions</h2>
+   <label>
+  <br>
+     <textarea rows='3' cols='30' placeholder>Enter your comment here...
+     </textarea>
+   </label>
+  <br>
+<!--Submit Button-->
+     <input type='submit' id='submit' value='submit'>
+<br>
+  </form>
+<p>No copyright, @ELG 2023<p>
+<br>
+ </body>
+</html>
